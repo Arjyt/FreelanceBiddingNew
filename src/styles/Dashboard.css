@@ -30,7 +30,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 90px; /* Increased gap between list items */
+    gap: 60px; /* Increased gap between list items */
     padding: 10px;
     text-align: center;
 }

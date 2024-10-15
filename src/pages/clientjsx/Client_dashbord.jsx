@@ -21,6 +21,9 @@ function alljobs(){
 function allbids(){
   setpage("allbids")
 }
+function goTohome(){
+  window.location='/'
+}
 
   return (
     <div class="dashboard">
@@ -29,6 +32,7 @@ function allbids(){
       <li onClick={create}>Create Job Offer</li>
       <li onClick={alljobs}>All Jobs</li>
       <li onClick={allbids}>Current Job Bids</li>
+      <li onClick={goTohome} style={{ backgroundColor: 'red' }} >Go to home</li>
       <li onClick={removeUser} style={{backgroundColor:"red"}}>Logout</li>
     </ul>
   </div>

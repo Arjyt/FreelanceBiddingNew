@@ -21,6 +21,9 @@ function Dashboard() {
   function sample() {
     window.location = "/sample";
   }
+  function goTohome(){
+    window.location='/'
+  }
 
   return (
     <div className="dashboard-container">
@@ -30,7 +33,9 @@ function Dashboard() {
           <li onClick={showJobView}>Find Works</li>
           <li>Pending Works</li>
           <li onClick={sample}>Completed</li>
+          <li onClick={goTohome} style={{ backgroundColor: 'red' }} >Go to home</li>
           <li style={{ backgroundColor: 'red' }} onClick={removeUser}>Logout</li>
+        
         </ul>
       </div>
       <div className="mainbar2">
