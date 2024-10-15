@@ -1,0 +1,120 @@
+.main {
+    background-color: #636466;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero {
+    background-color: #fff;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+}
+
+.hero .hero-image {
+    width: 500px;
+    background-color: rgb(35, 147, 147);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.hero .hero-image img {
+    width: 300px;
+    text-align: center;
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+.hero .hero-image h1 {
+    font-size: 36px; /* Increased font size */
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+.hero .hero-image p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero .hero-content {
+    width: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.hero .hero-content input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #636466;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+.hero .hero-content input:focus {
+    border-bottom-color: rgb(241, 120, 140); /* Highlight color on focus */
+}
+
+.hero .hero-content button {
+    text-align: center;
+    height: 45px;
+    margin-top: 50px;
+    width: 120px;
+    background-color: rgb(241, 120, 140);
+    margin-left: 150px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-content button:hover {
+    background-color: rgb(224, 90, 110); /* Darker on hover */
+}
+
+.login {
+    background-color: darkgoldenrod;
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    width: fit-content;
+    margin: 10px auto; /* Centers login button */
+}
+
+.login button {
+    width: 100px;
+    height: 40px;
+    background-color: bisque;
+    color: black;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #f5a623; /* Hover effect */
+}

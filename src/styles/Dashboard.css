@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Modern font for better readability */
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5; /* Light background for better contrast */
+}
+
+.sidebar2 {
+    width: 250px;
+    height: 100vh;
+    background-color: #344955; /* Darker blue-gray for the sidebar */
+    padding: 20px;
+    position: fixed;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: width 0.3s ease; /* Smooth transition for responsive resizing */
+}
+
+.sidebar2:hover {
+    width: 270px; /* Expand slightly on hover for a dynamic effect */
+}
+
+.sidebar2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 90px; /* Increased gap between list items */
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar2 ul li {
+    color: #ffffff; /* Light text color for contrast */
+    background-color: #4a6572; /* Medium blue-gray for list items */
+    border-radius: 8px; /* Softer rounded corners */
+    height: 60px;
+    padding-top: 18px; /* Center text better vertically */
+    font-size: 16px; /* Adjusted font size for balance */
+    font-weight: 500; /* Medium font weight for a sleeker look */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar2 ul li:hover {
+    background-color: #232f34; /* Darker shade for hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover for a lift effect */
+    cursor: pointer;
+}
+
+.mainbar2 {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    background-color: #ffffff;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow for a floating effect */
+    transition: margin-left 0.3s ease; /* Smooth transition when sidebar adjusts */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .sidebar2 {
+        width: 100%;
+        height: auto;
+        position: relative; /* Position sidebar at the top */
+        box-shadow: none; /* Remove shadow for seamless stacking */
+    }
+
+    .mainbar2 {
+        margin-left: 0;
+        width: 100%;
+        height: calc(100vh - 60px); /* Adjust height based on the sidebar */
+        padding-top: 10px; /* Padding for a cleaner layout */
+    }
+}

@@ -1,0 +1,75 @@
+/* Job card wrapper with flexbox for horizontal alignment */
+.job-card-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows multiple cards to wrap onto the next line */
+    gap: 10px; /* Space between cards */
+    padding: 20px; /* Add padding around the cards */
+    background-color: #f0f0f0; /* Light background */
+}
+
+/* Job card styles */
+.job-card {
+    font-family: 'Poppins', sans-serif;
+    width: 300px; /* Width for each card */
+    height: 400px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Card image styles */
+.job-card .card-image {
+    height: 50%; /* Half the height of the card */
+    background-image: url('data:image/png;base64,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'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card content styles */
+.job-card .card-content {
+    padding: 15px;
+    background-color: #ffffff;
+    color: #333;
+    flex: 1;
+}
+
+/* Hover effect */
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
+.job-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px; /* Adjusted for better spacing */
+    color: #333;
+}
+
+/* Paragraph */
+.job-card p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.job-card p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Bid button */
+.bid {
+    background-color: orange;
+    color: black;
+    width: 100px;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.b{
+    display: flex;
+}

@@ -1,0 +1,115 @@
+.job-card-wrapper2 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 15px; /* Space between job cards */
+  flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+}
+
+.job-card2 {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px; /* Reduce padding for a smaller card */
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 400px; /* Set a maximum width for the card */
+  width: 100%; /* Card will take full width up to max-width */
+}
+
+.job-card2:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slightly scale up on hover for effect */
+}
+
+.card-image2 {
+  height: 80px; /* Reduce height for the image placeholder */
+  background-color: #ccc; /* Placeholder for job image */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-content2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bids-section2 {
+  margin-top: 10px;
+  border-top: 1px solid #ddd; /* Add a border above bids section */
+  padding-top: 10px; /* Padding for space above bids */
+}
+
+.bid-list2 {
+  list-style: none;
+  padding: 0;
+}
+
+.bid-item2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px; /* Reduce padding for smaller bids */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 8px; /* Reduce margin for a tighter layout */
+  background-color: #fff;
+  transition: background-color 0.2s; /* Smooth transition for background color */
+}
+
+.bid-item2:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+}
+
+.bid-actions2 {
+  display: flex;
+  gap: 8px; /* Space between action icons */
+}
+
+.check-icon2,
+.cross-icon2 {
+  cursor: pointer;
+  font-size: 18px; /* Adjust icon size for smaller cards */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.check-icon2:hover {
+  color: green; /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.cross-icon2:hover {
+  color: red; /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Heading Styles */
+h3 {
+  margin: 0; /* Remove default margin for headings */
+  font-size: 1.5rem; /* Font size for the heading */
+  color: #333; /* Darker text color for better contrast */
+  font-weight: bold; /* Make heading bold */
+  padding: 20px;
+  padding-left: 0;
+}
+
+h4 {
+  margin: 5px 0; /* Add some margin for the subheading */
+  font-size: 1.25rem; /* Font size for subheading */
+  color: #0ce145; /* Slightly lighter color for subheading */
+  padding-top: 20px;
+}
+
+p {
+  margin: 5px 0; /* Space between paragraphs */
+  color: #666; /* Dark gray for better readability */
+}
+
+.bid-user2 {
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+.bid-user2:hover {
+  cursor: pointer;
+  color: brown; /* Change color on hover */
+}

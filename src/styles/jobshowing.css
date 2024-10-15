@@ -1,0 +1,156 @@
+/* Job card wrapper with flexbox for horizontal alignment */
+.job-card-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows multiple cards to wrap onto the next line */
+  justify-content:center; /* Evenly space cards */
+  gap: 90px; /* Increased space between cards for better readability */
+  padding: 30px; /* Add more padding around the cards */
+  background-color: #f9f9f9; /* Slightly lighter background for a softer feel */
+}
+
+/* Job card styles */
+.job-card {
+  font-family: 'Poppins', sans-serif;
+  width: 320px; /* Slightly wider for better content layout */
+  height: 420px; /* Slightly taller for better content fitting */
+  border-radius: 20px; /* Softer rounded corners */
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow for a premium feel */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smoother hover effect */
+  background-color: #ffffff;
+  margin-right: 40px;
+}
+
+/* Card image styles */
+.job-card .card-image {
+  height: 150px; /* Larger image for more emphasis */
+  background-image: url('data:image/png;base64,...'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Card content styles */
+.job-card .card-content {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Hover effect */
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Title */
+.job-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #444; /* Slightly darker for better readability */
+}
+
+/* Paragraph */
+.job-card p {
+  margin: 10px 0;
+  color: #666;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.job-card p strong {
+  font-weight: bold;
+  color: #222; /* Strong contrast for keywords */
+  padding-right: 10px;
+}
+
+/* Bid button */
+.bid {
+  background-color: #ff9800;
+  color: white;
+  width: 120px;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.bid:hover {
+  background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px; /* More rounded for a modern look */
+  width: 450px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for a prominent effect */
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #555; /* Darker on hover */
+}
+
+/* Button styles */
+button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Modal input field styles */
+.modal input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.modal input:focus {
+  border-color: #007bff;
+}
