@@ -2,56 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Modern font for better readability */
+    font-family: 'Roboto', sans-serif;
 }
 
 .dashboard-container {
     display: flex;
     height: 100vh;
-    background-color: #f0f2f5; /* Light background for better contrast */
+    background-color: #f9f9f9;
 }
 
 .sidebar2 {
     width: 250px;
     height: 100vh;
-    background-color: #344955; /* Darker blue-gray for the sidebar */
+    background-color: #db823f;
     padding: 20px;
     position: fixed;
     overflow-y: auto;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: width 0.3s ease; /* Smooth transition for responsive resizing */
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
 }
 
 .sidebar2:hover {
-    width: 270px; /* Expand slightly on hover for a dynamic effect */
+    width: 270px;
 }
 
 .sidebar2 ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 60px; /* Increased gap between list items */
+    gap: 35px;
     padding: 10px;
     text-align: center;
 }
 
 .sidebar2 ul li {
-    color: #ffffff; /* Light text color for contrast */
-    background-color: #4a6572; /* Medium blue-gray for list items */
-    border-radius: 8px; /* Softer rounded corners */
+    color: black;
+    background-color: #dbcdbc;
+    border-radius: 10px;
     height: 60px;
-    padding-top: 18px; /* Center text better vertically */
-    font-size: 16px; /* Adjusted font size for balance */
-    font-weight: 500; /* Medium font weight for a sleeker look */
+    padding-top: 18px;
+    font-size: 16px;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sidebar2 ul li:hover {
-    background-color: #232f34; /* Darker shade for hover effect */
+    background-color: #ffb300;
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover for a lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
@@ -62,28 +62,62 @@
     background-color: #ffffff;
     height: 100vh;
     overflow-y: auto;
-    border-radius: 10px; /* Rounded corners for a smoother look */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow for a floating effect */
-    transition: margin-left 0.3s ease; /* Smooth transition when sidebar adjusts */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s ease;
 }
 
-/* Responsive layout */
+.mainbar2 h1 {
+    color: #333333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mainbar2 p {
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #ffffff;
+    color: #ff6f00;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f00;
+    color: #ffffff;
+    border: 2px solid #ff6f00;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
 @media (max-width: 768px) {
     .dashboard-container {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
     }
 
     .sidebar2 {
         width: 100%;
         height: auto;
-        position: relative; /* Position sidebar at the top */
-        box-shadow: none; /* Remove shadow for seamless stacking */
+        position: relative;
+        box-shadow: none;
     }
 
     .mainbar2 {
         margin-left: 0;
         width: 100%;
-        height: calc(100vh - 60px); /* Adjust height based on the sidebar */
-        padding-top: 10px; /* Padding for a cleaner layout */
+        height: calc(100vh - 60px);
+        padding-top: 10px;
     }
 }

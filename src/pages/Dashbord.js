@@ -32,7 +32,7 @@ function Dashboard() {
           <li onClick={showProfile}>Your Profile</li>
           <li onClick={showJobView}>Find Works</li>
           <li>Pending Works</li>
-          <li onClick={sample}>Completed</li>
+          <li>Completed</li>
           <li onClick={goTohome} style={{ backgroundColor: 'red' }} >Go to home</li>
           <li style={{ backgroundColor: 'red' }} onClick={removeUser}>Logout</li>
         

@@ -2,10 +2,11 @@
 .job-card-wrapper {
   display: flex;
   flex-wrap: wrap; /* Allows multiple cards to wrap onto the next line */
-  justify-content:center; /* Evenly space cards */
+  ;/* Evenly space cards */
   gap: 90px; /* Increased space between cards for better readability */
   padding: 30px; /* Add more padding around the cards */
   background-color: #f9f9f9; /* Slightly lighter background for a softer feel */
+  
 }
 
 /* Job card styles */
@@ -19,6 +20,8 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smoother hover effect */
   background-color: #ffffff;
   margin-right: 40px;
+  margin-top: 60px;
+  margin-left: 40px;
 }
 
 /* Card image styles */
