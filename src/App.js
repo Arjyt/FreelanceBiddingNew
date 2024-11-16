@@ -5,7 +5,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashbord';
 import Client_dashbord from './pages/clientjsx/Client_dashbord';
-import Jobshowing from './pages/Jobshowing';
+import Admin from './Admin';
+
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path='/Dashboard' element={<Dashboard/>}/>
         <Route path='/client-dashbord'element={<Client_dashbord/>}/>
-        <Route path='/sample' element={<Jobshowing/>}/>
+        <Route path='/admin' element={<Admin/>}/>
       </Routes>
     </div>
   );

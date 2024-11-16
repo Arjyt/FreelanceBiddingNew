@@ -8,58 +8,74 @@
 .dashboard-container {
     display: flex;
     height: 100vh;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f3f4f6, #f9f9f9);
+    overflow: hidden;
 }
 
 .sidebar2 {
-    width: 250px;
+    width: 260px;
     height: 100vh;
-    background-color: #db823f;
+    background: linear-gradient(145deg, #FF6A3D, #FF914D);
+    color: white;
     padding: 20px;
     position: fixed;
     overflow-y: auto;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s ease;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+    border-right: 3px solid rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease, background 0.3s ease;
 }
 
 .sidebar2:hover {
-    width: 270px;
+    width: 280px;
+    background: linear-gradient(145deg, #FF914D, #FF6A3D);
 }
 
 .sidebar2 ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 25px;
     padding: 10px;
     text-align: center;
 }
 
 .sidebar2 ul li {
-    color: black;
-    background-color: #dbcdbc;
-    border-radius: 10px;
-    height: 60px;
-    padding-top: 18px;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .sidebar2 ul li:hover {
-    background-color: #ffb300;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
 
+.sidebar2 ul li:nth-child(5),
+.sidebar2 ul li:nth-child(6) {
+    background: #D32F2F;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar2 ul li:nth-child(5):hover,
+.sidebar2 ul li:nth-child(6):hover {
+    background: #B71C1C;
+}
+
 .mainbar2 {
-    margin-left: 250px;
-    padding: 20px;
+    margin-left: 260px;
+    padding: 25px;
     flex: 1;
-    background-color: #ffffff;
+    background: white;
     height: 100vh;
     overflow-y: auto;
     border-radius: 12px;
@@ -81,8 +97,9 @@
 }
 
 button {
-    background-color: #ffffff;
-    color: #ff6f00;
+    background: linear-gradient(135deg, #FF914D, #FF6A3D);
+    color: #ffffff;
+    border: none;
     border-radius: 8px;
     padding: 10px 20px;
     font-size: 16px;
@@ -92,10 +109,9 @@ button {
 }
 
 button:hover {
-    background-color: #ff6f00;
-    color: #ffffff;
-    border: 2px solid #ff6f00;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #FF6A3D, #FF914D);
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(255, 107, 0, 0.5);
 }
 
 button:focus {

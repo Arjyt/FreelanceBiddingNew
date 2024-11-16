@@ -1,14 +1,33 @@
 import React from 'react';
-import '../styles/homepage.css'; // Import CSS for styling
+import '../styles/homepage.css'; 
 
 const HomePage = () => {
-  const data = localStorage.getItem("loggedInUser"); // Simple string
-  const response = data; // No need for JSON.parse
+  const data = localStorage.getItem("loggedInUser"); 
+  const response = data; // 
 
   return (
     <div className="homepage-container">
+      
       {/* Hero Section */}
       <section className="hero1">
+      <h1 
+  style={{
+    position: 'absolute', 
+    left: '10px', 
+    top: '10px', 
+    color: '#fff',  
+    textShadow: '2px 2px 8px rgba(0, 0, 0, 0.2)',  
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", 
+    fontSize: '20px', 
+    fontWeight: 'bold', 
+    letterSpacing: '2px', 
+    zIndex: '1000',
+    opacity: '.5', 
+  }}
+>
+  proWork
+</h1>
+
         <div className="hero-content1">
           <h1>Connect with Top Freelancers or Get Hired for Exciting Projects!</h1>
           <p>Your platform to find the perfect match between clients and freelancers.</p>

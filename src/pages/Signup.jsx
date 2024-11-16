@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import man from '../components/assets/man_146035.png';
+import { FaArrowLeft } from 'react-icons/fa';
 import '../styles/signup.css';
-
 function Signup() {
   // Create state variables for each input field
   const [name, setName] = useState('');
@@ -10,26 +10,18 @@ function Signup() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-
-  const data={
-    name,
-    email,
-    phoneNumber,
-    password,
-    confirmPassword
-  }
-  
+  const data = { name, email, phoneNumber, password, confirmPassword };
 
   function clked() {
-    // You can access the input values here
     console.log({ name, email, phoneNumber, password, confirmPassword });
     window.location = `/login`;
-    localStorage.setItem(name,JSON.stringify(data))
+    localStorage.setItem(name, JSON.stringify(data));
   }
 
-  function login(){
+  function login() {
     window.location = `/login`;
   }
+
   return (
     <div>
       <div className="main">
@@ -37,7 +29,19 @@ function Signup() {
           <div className="hero-image">
             <img src={man} alt="" />
             <h1>Let's get you set up</h1>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            
+            <button onClick={() => window.history.back()}   style={{
+              background: "linear-gradient(135deg, #239393, #18787b)",
+              color: "black",
+              border: "none",
+              padding: "10px 20px",
+              marginTop:'50px',
+              borderRadius: "5px",
+              cursor: "pointer",
+              fontSize: "16px",
+              gap: "10px",
+              transition: "transform 0.3s ease, box-shadow 0.3s ease"
+  }}> <FaArrowLeft size={20} /> <span style={{paddingLeft:'10px'}}>Go back</span></button>
           </div>
           <div className="hero-content">
             <input 
@@ -71,17 +75,15 @@ function Signup() {
               onChange={(e) => setConfirmPassword(e.target.value)} 
             />
             <button onClick={clked}>Submit</button>
-            
-            
           </div>
-          <div className="login" style={{display:"flex",justifyContent:"center",paddingTop:"120px",flexDirection:"column",gap:"10px", alignItems:"center"}}>
-            <span>Already have a account ?</span>
-            <button className="login" onClick={login}>Login</button>
-            </div>
-      </div>
         </div>
-       
-      
+        <div className="login-section">
+          <span>Already have an account?</span>
+          <button onClick={login}>Login</button>
+        </div>
+
+
+      </div>
     </div>
   );
 }
